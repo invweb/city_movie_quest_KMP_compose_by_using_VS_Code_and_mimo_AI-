@@ -18,11 +18,22 @@ A Kotlin Multiplatform (KMP) app for exploring movie filming locations through c
 
 ## Stack
 
-- **Language:** Kotlin 1.9.22
-- **UI:** Compose Multiplatform 1.6.1
-- **Database:** SQLDelight 2.0.1
-- **Serialization:** Kotlinx Serialization 1.6.3
+- **Language:** Kotlin 2.0.21
+- **UI:** Compose Multiplatform 1.7.1
+- **Database:** SQLDelight 2.0.2
+- **Serialization:** Kotlinx Serialization
+- **Gradle:** 8.9
 - **Target platforms:** Android, Desktop (JVM), Web (JS)
+
+## Platform Status
+
+| Platform | Status | Notes |
+|----------|--------|-------|
+| Desktop (JVM) | Stable | Fully working |
+| Android | Stable | Builds and runs correctly |
+| Web (JS/Canvas) | Experimental | Skia WASM + WebGL issues in CMP 1.7.1. May not work in all browsers. |
+
+> **Web target:** Compose Canvas for Web uses Skia WASM for rendering. This requires WebGL support and proper WASM loading. Due to limitations in the current CMP implementation, the Web target may show a blank page or WebGL errors in some browsers. This is a known issue in Compose Multiplatform and is expected to improve in future releases.
 
 ## Features
 
@@ -52,7 +63,7 @@ quest-city/
 
 ### Android
 ```bash
-JAVA_HOME=/path/to/jdk17 ./gradlew :app-android:installDebug
+JAVA_HOME=/path/to/jdk21 ./gradlew :app-android:installDebug
 ```
 
 ### Desktop
@@ -60,12 +71,12 @@ JAVA_HOME=/path/to/jdk17 ./gradlew :app-android:installDebug
 JAVA_HOME=/opt/homebrew/opt/openjdk@21 ./gradlew :app-desktop:run
 ```
 
-### Web
+### Web (Experimental)
 ```bash
 JAVA_HOME=/opt/homebrew/opt/openjdk@21 ./gradlew :app-web:jsBrowserDevelopmentRun
 ```
 
-> **Note:** JDK 21 is required. The default system JDK (26) is not compatible with Kotlin 1.9.22.
+> **Note:** JDK 21 is required. The default system JDK (26) is not compatible with Kotlin 2.0.21.
 
 ## Quests
 
