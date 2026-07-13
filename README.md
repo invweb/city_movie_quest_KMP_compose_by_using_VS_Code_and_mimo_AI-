@@ -2,14 +2,33 @@
 
 A Kotlin Multiplatform (KMP) app for exploring movie filming locations through city quests. Entire UI built with Compose Multiplatform.
 
+## Screenshots
+
+### Main Menu
+![Main Menu](screenshots/01_main_menu.png)
+
+### Quests Catalog
+![Quests Catalog](screenshots/02_quests_catalog.png)
+
+### Settings
+![Settings](screenshots/03_settings.png)
+
 ## Stack
 
 - **Language:** Kotlin 1.9.22
 - **UI:** Compose Multiplatform 1.6.1
 - **Database:** SQLDelight 2.0.1
-- **Maps:** OSMDroid (Android), Canvas fallback (Desktop/Web)
 - **Serialization:** Kotlinx Serialization 1.6.3
 - **Target platforms:** Android, Desktop (JVM), Web (JS)
+
+## Features
+
+- **9 movie quests** across 3 difficulty levels (Easy, Medium, Hard)
+- **3 task types:** Quiz, Count, Fact or Fiction
+- **Multilingual:** English, Russian, German
+- **Settings:** Language, Theme (Light/Dark), Font Size
+- **Progress tracking** with score and attempt counting
+- **IMDb facts** for each task
 
 ## Project Structure
 
@@ -45,68 +64,26 @@ JAVA_HOME=/opt/homebrew/opt/openjdk@21 ./gradlew :app-web:jsBrowserDevelopmentRu
 
 > **Note:** JDK 21 is required. The default system JDK (26) is not compatible with Kotlin 1.9.22.
 
+## Quests
+
+| Quest | Difficulty | City | Tasks |
+|-------|------------|------|-------|
+| Following Blade in St. Petersburg | Medium | St. Petersburg | 6 |
+| Following Indiana Jones in Moscow | Easy | Moscow | 5 |
+| Agent 007: St. Petersburg Secrets | Hard | St. Petersburg | 5 |
+| Following The Matrix in Moscow | Easy | Moscow | 5 |
+| Titanic: St. Petersburg Mysteries | Easy | St. Petersburg | 5 |
+| John Wick: Moscow Protocol | Medium | Moscow | 5 |
+| Harry Potter: London Magic | Medium | London | 5 |
+| Inception: Dreams Across Cities | Hard | Multiple | 5 |
+| The Dark Knight: Gotham Chronicles | Hard | Multiple | 5 |
+
 ## Adding a New Quest
 
 1. Create a JSON file in `shared/src/commonMain/composeResources/files/`
-2. Follow the format from `quest_blade_petersburg.json`
-3. Load images into `shared/src/commonMain/composeResources/files/`
-4. Import via `QuestRepository.importQuestFromJson()`
-
-## Quest JSON Format
-
-```json
-{
-  "id": "unique_id",
-  "title": "Quest Title",
-  "description": "Description",
-  "city": "City",
-  "difficulty": "easy|medium|hard",
-  "durationMin": 60,
-  "locations": [
-    {
-      "id": "loc_id",
-      "lat": 59.9398,
-      "lon": 30.3146,
-      "radiusM": 150.0,
-      "orderIndex": 0,
-      "tasks": [
-        {
-          "id": "task_id",
-          "type": "quiz|count|fact_or_fict",
-          "prompt": "Question text",
-          "answerKey": "Correct answer",
-          "hints": ["Hint 1"],
-          "rewardPoints": 10,
-          "imdbFact": "IMDb fact"
-        }
-      ]
-    }
-  ]
-}
-```
-
-## Task Types
-
-- **Quiz** — multiple choice question
-- **Count** — numeric input (counting task)
-- **Fact or Fiction** — true/false with IMDb fact explanation
-
-## Testing
-
-```bash
-# Unit tests
-JAVA_HOME=/opt/homebrew/opt/openjdk@21 ./gradlew :shared:desktopTest
-
-# Instrumentation tests (Android)
-JAVA_HOME=/opt/homebrew/opt/openjdk@21 ./gradlew :shared:connectedAndroidTest
-```
-
-## Architecture
-
-- **Domain layer:** models, repository interfaces, use cases (geo, answer checking, progress)
-- **Data layer:** repository implementations, JSON parser, SQLDelight (planned)
-- **UI layer:** Compose screens, ViewModels with StateFlow, platform map adapters
-- **Platform layer:** OSMDroid integration (Android), Canvas fallback (Desktop/Web)
+2. Follow the format from existing quest files
+3. Add the filename to the quest list in `Main.kt`
+4. For Android: also copy to `app-android/src/main/assets/files/`
 
 ## License
 
