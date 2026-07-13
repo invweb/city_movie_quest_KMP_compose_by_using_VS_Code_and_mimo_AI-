@@ -1,0 +1,167 @@
+{
+  "id": "john_wick_moscow",
+  "title": {
+    "en": "John Wick: Moscow Protocol",
+    "ru": "Джон Уик: Московский протокол",
+    "de": "John Wick: Moskauer Protokoll"
+  },
+  "description": {
+    "en": "Quest through Moscow locations inspired by the John Wick franchise. 5 locations with action-packed facts.",
+    "ru": "Квест по московским локациям, вдохновлённый франшизой «Джон Уик». 5 локаций с фактами об экшенах.",
+    "de": "Quest durch Moskauer Drehorte, inspiriert von der John-Wick-Reihe. 5 Standorte mit actiongeladenen Fakten."
+  },
+  "city": {
+    "en": "Moscow",
+    "ru": "Москва",
+    "de": "Moskau"
+  },
+  "difficulty": "medium",
+  "durationMin": 60,
+  "locations": [
+    {
+      "id": "jw_loc_1",
+      "lat": 55.7580,
+      "lon": 37.6180,
+      "radiusM": 200.0,
+      "orderIndex": 0,
+      "tasks": [
+        {
+          "id": "jw_task_1",
+          "type": "quiz",
+          "prompt": {
+            "en": "Which actor plays John Wick?",
+            "ru": "Какой актёр играет Джона Уика?",
+            "de": "Welcher Schauspieler spielt John Wick?"
+          },
+          "answerKey": "Keanu Reeves",
+          "hints": [
+            "He also played Neo in The Matrix",
+            "He is known for his action roles"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "Keanu Reeves stars as John Wick. He performed most of his own stunts and trained extensively in martial arts and gun fu.",
+            "ru": "Киану Ривз играет Джона Уика. Он выполнял большинство трюков самостоятельно и много тренировался по боевым искусствам.",
+            "de": "Keanu Reeves spielt John Wick. Er führte die meisten Stunts selbst aus und trainierte intensiv in Kampfkunst und Waffenkünsten."
+          }
+        }
+      ]
+    },
+    {
+      "id": "jw_loc_2",
+      "lat": 55.7530,
+      "lon": 37.6230,
+      "radiusM": 150.0,
+      "orderIndex": 1,
+      "tasks": [
+        {
+          "id": "jw_task_2",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "The first John Wick film was directed by two former stuntmen. True or false?",
+            "ru": "Первый фильм «Джон Уик» был поставлен двумя бывшими каскадёрами. Это правда или вымысел?",
+            "de": "Der erste John-Wick-Film wurde von zwei ehemaligen Stuntmännern inszeniert. Wahr oder falsch?"
+          },
+          "answerKey": "fact",
+          "hints": [
+            "They are Chad Stahelski and David Leitch",
+            "They worked on The Matrix together"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "John Wick was co-directed by Chad Stahelski and David Leitch, both former stunt coordinators who worked on The Matrix.",
+            "ru": "«Джон Уик» был совместно поставлен Чадом Стархельски и Дэвидом Лейтчем, бывшими координаторами трюков, работавшими над «Матрицей».",
+            "de": "John Wick wurde gemeinsam von Chad Stahelski und David Leitch inszeniert, beide ehemalige Stuntkoordinatoren, die an The Matrix mitarbeiteten."
+          }
+        }
+      ]
+    },
+    {
+      "id": "jw_loc_3",
+      "lat": 55.7480,
+      "lon": 37.6130,
+      "radiusM": 180.0,
+      "orderIndex": 2,
+      "tasks": [
+        {
+          "id": "jw_task_3",
+          "type": "count",
+          "prompt": {
+            "en": "How many John Wick films have been released so far? Enter a number.",
+            "ru": "Сколько фильмов «Джон Уик» вышло на данный момент? Введите число.",
+            "de": "Wie viele John-Wick-Filme sind bisher erschienen? Geben Sie eine Zahl ein."
+          },
+          "answerKey": "4",
+          "hints": [
+            "The first film came out in 2014",
+            "The fourth film was released in 2023"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "Four John Wick films have been released: John Wick (2014), Chapter 2 (2017), Chapter 3 — Parabellum (2019), and Chapter 4 (2023).",
+            "ru": "Вышло четыре фильма «Джон Уик»: «Джон Уик» (2014), «Глава 2» (2017), «Глава 3: Парабеллум» (2019) и «Глава 4» (2023).",
+            "de": "Vier John-Wick-Filme wurden veröffentlicht: John Wick (2014), Kapitel 2 (2017), Kapitel 3 — Parabellum (2019) und Kapitel 4 (2023)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "jw_loc_4",
+      "lat": 55.7430,
+      "lon": 37.6280,
+      "radiusM": 200.0,
+      "orderIndex": 3,
+      "tasks": [
+        {
+          "id": "jw_task_4",
+          "type": "quiz",
+          "prompt": {
+            "en": "What is the name of the fictional hotel in John Wick where assassins gather?",
+            "ru": "Как называется вымышленный отель в «Джоне Уике», где собираются убийцы?",
+            "de": "Wie heißt das fiktive Hotel in John Wick, in dem sich Auftragskiller treffen?"
+          },
+          "answerKey": "The Continental",
+          "hints": [
+            "It has branches in major cities",
+            "There are strict rules about no business on premises"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "The Continental is a chain of hotels for the criminal underworld in the John Wick universe. It has strict rules including no \"business\" on its premises.",
+            "ru": "«Континенталь» — сеть отелей для криминального мира во вселенной «Джона Уика». У него строгие правила, включая запрет на «дела» на территории.",
+            "de": "Das Continental ist eine Hotelkette für die Unterwelt in der John-Wick-Universum. Es hat strenge Regeln, einschließlich eines Verbots von Geschäften auf dem Gelände."
+          }
+        }
+      ]
+    },
+    {
+      "id": "jw_loc_5",
+      "lat": 55.7400,
+      "lon": 37.6350,
+      "radiusM": 150.0,
+      "orderIndex": 4,
+      "tasks": [
+        {
+          "id": "jw_task_5",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "Keanu Reeves trained for nearly a year to prepare for the action scenes in John Wick. True or false?",
+            "ru": "Киану Ривз тренировался почти год, готовясь к боевым сценам в «Джоне Уике». Это правда или вымысел?",
+            "de": "Keanu Reeves trainierte fast ein Jahr, um sich auf die Actionszenen in John Wick vorzubereiten. Wahr oder falsch?"
+          },
+          "answerKey": "fact",
+          "hints": [
+            "He trained in judo, jiu-jitsu, and firearms",
+            "He is known for his dedication to action roles"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "Keanu Reeves trained extensively in judo, Brazilian jiu-jitsu, and tactical firearms training for the John Wick series.",
+            "ru": "Киану Ривз много тренировался по дзюдо, бразильскому джиу-джитсу и тактической стрельбе для серии «Джон Уик».",
+            "de": "Keanu Reeves trainierte intensiv in Judo, brasilianischem Jiu-Jitsu und taktischem Schießen für die John-Wick-Reihe."
+          }
+        }
+      ]
+    }
+  ]
+}

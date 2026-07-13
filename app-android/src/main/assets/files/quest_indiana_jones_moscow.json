@@ -1,0 +1,167 @@
+{
+  "id": "indiana_jones_moscow",
+  "title": {
+    "en": "Following Indiana Jones in Moscow",
+    "ru": "По следам Индианы Джонса в Москве",
+    "de": "Auf den Spuren von Indiana Jones in Moskau"
+  },
+  "description": {
+    "en": "Quest through locations related to the premiere and culture of Indiana Jones and the Kingdom of the Crystal Skull (2008) in Moscow. 5 locations with questions and interesting facts.",
+    "ru": "Квест по локациям, связанным с премьерой и культурой фильма «Индиана Джонс и Королевство хрустального черепа» (2008) в Москве. 5 локаций с вопросами и интересными фактами.",
+    "de": "Quest durch Drehorte und kulturelle Stätten, die mit Indiana Jones und das Königreich des Kristallschädels (2008) in Moskau verbunden sind. 5 Standorte mit Fragen und interessanten Fakten."
+  },
+  "city": {
+    "en": "Moscow",
+    "ru": "Москва",
+    "de": "Moskau"
+  },
+  "difficulty": "easy",
+  "durationMin": 60,
+  "locations": [
+    {
+      "id": "ij_loc_1",
+      "lat": 55.7558,
+      "lon": 37.6173,
+      "radiusM": 200.0,
+      "orderIndex": 0,
+      "tasks": [
+        {
+          "id": "ij_task_1",
+          "type": "quiz",
+          "prompt": {
+            "en": "Which Moscow cinema hosted the world premiere of Indiana Jones and the Kingdom of the Crystal Skull?",
+            "ru": "Какой московский кинотеатр принял мировую премьеру фильма «Индиана Джонс и Королевство хрустального черепа»?",
+            "de": "Welches Moskauer Kino veranstaltete die Weltpremiere von Indiana Jones und das Königreich des Kristallschädels?"
+          },
+          "answerKey": "Кинотеатр «Пушкинский»",
+          "hints": [
+            "This cinema is located on Tverskaya Square",
+            "It opened in 1961"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "The world premiere took place on May 15, 2008. According to IMDb, the budget was 185 million dollars.",
+            "ru": "Мировая премьера фильма состоялась 15 мая 2008 года. По данным IMDb, бюджет составил 185 миллионов долларов.",
+            "de": "Die Weltpremiere fand am 15. Mai 2008 statt. Laut IMDb betrug das Budget 185 Millionen Dollar."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ij_loc_2",
+      "lat": 55.7520,
+      "lon": 37.6200,
+      "radiusM": 150.0,
+      "orderIndex": 1,
+      "tasks": [
+        {
+          "id": "ij_task_2",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "Harrison Ford performed most of the stunts himself despite his age. True or false?",
+            "ru": "Харрисон Форд выполнял большинство трюков в фильме самостоятельно, несмотря на возраст. Это правда или вымысел?",
+            "de": "Harrison Ford führte die meisten Stunts trotz seines Alters selbst aus. Wahr oder falsch?"
+          },
+          "answerKey": "fact",
+          "hints": [
+            "Harrison Ford was 65 years old during filming",
+            "He is known for performing his own stunts"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "According to IMDb, Harrison Ford did perform a significant portion of his own stunts, though a stunt double was used for dangerous scenes.",
+            "ru": "По данным IMDb, Харрисон Форд действительно выполнил значительную часть трюков самостоятельно, хотя для опасных сцен привлекался каскадёр.",
+            "de": "Laut IMDb führte Harrison Ford tatsächlich einen erheblichen Teil seiner Stunts selbst aus, wobei für gefährliche Szenen ein Stuntman eingesetzt wurde."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ij_loc_3",
+      "lat": 55.7600,
+      "lon": 37.6100,
+      "radiusM": 180.0,
+      "orderIndex": 2,
+      "tasks": [
+        {
+          "id": "ij_task_3",
+          "type": "count",
+          "prompt": {
+            "en": "How many Indiana Jones films were made before the Crystal Skull? Enter a number.",
+            "ru": "Сколько фильмов об Индиане Джонсе было снято до «Хрустального черепа»? Введите число.",
+            "de": "Wie viele Indiana Jones-Filme wurden vor dem Kristallschädel gedreht? Geben Sie eine Zahl ein."
+          },
+          "answerKey": "3",
+          "hints": [
+            "The first film was released in 1981",
+            "It is the third part of the original trilogy plus a prequel"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "Before the Crystal Skull, three films were made: Raiders of the Lost Ark (1981), Temple of Doom (1984), and The Last Crusade (1989).",
+            "ru": "До «Хрустального черепа» было снято три фильма: «В поисках утраченного ковчега» (1981), «Храм судьбы» (1984) и «Последний крестовый поход» (1989).",
+            "de": "Vor dem Kristallschädel wurden drei Filme gedreht: Jäger des verlorenen Schatzes (1981), Der Tempel des Todes (1984) und Der letzte Kreuzzug (1989)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ij_loc_4",
+      "lat": 55.7480,
+      "lon": 37.6350,
+      "radiusM": 200.0,
+      "orderIndex": 3,
+      "tasks": [
+        {
+          "id": "ij_task_4",
+          "type": "quiz",
+          "prompt": {
+            "en": "Who directed Indiana Jones and the Kingdom of the Crystal Skull?",
+            "ru": "Кто из режиссёров поставил фильм «Индиана Джонс и Королевство хрустального черепа»?",
+            "de": "Wer hat Indiana Jones und das Königreich des Kristallschädels inszeniert?"
+          },
+          "answerKey": "Стивен Спилберг",
+          "hints": [
+            "This director directed all films in the series",
+            "He also directed Jaws and Schindler's List"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "Steven Spielberg directed all five Indiana Jones films. According to IMDb, this is his longest-running franchise.",
+            "ru": "Стивен Спилберг поставил все пять фильмов об Индиане Джонсе. По данным IMDb, это его самая продолжительная франшиза.",
+            "de": "Steven Spielberg inszenierte alle fünf Indiana Jones-Filme. Laut IMDb ist dies seine am längsten laufende Filmreihe."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ij_loc_5",
+      "lat": 55.7550,
+      "lon": 37.6250,
+      "radiusM": 150.0,
+      "orderIndex": 4,
+      "tasks": [
+        {
+          "id": "ij_task_5",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "Indiana Jones' hat was created specifically for the film by Herbert Johnson company. True or false?",
+            "ru": "Шляпа Индианы Джонса была создана специально для фильма компанией Herbert Johnson. Это правда или вымысел?",
+            "de": "Indiana Jones' Hut wurde speziell für den Film von der Firma Herbert Johnson hergestellt. Wahr oder falsch?"
+          },
+          "answerKey": "fact",
+          "hints": [
+            "The hat became a cultural symbol of the character",
+            "The company has existed since 1889"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "According to IMDb, Herbert Johnson Hat Company created the iconic fedora felt hat specifically for the film. The hat became one of the most recognizable props in cinema history.",
+            "ru": "По данным IMDb, фирма Herbert Johnson Hat Company создала культовую фетровую шляпу-федору специально для фильма. Шляпа стала одним из самых узнаваемых реквизитов в киноистории.",
+            "de": "Laut IMDb stellte die Herbert Johnson Hat Company den ikonischen Filzhut speziell für den Film her. Der Hut wurde zu einem der bekanntesten Requisiten der Filmgeschichte."
+          }
+        }
+      ]
+    }
+  ]
+}

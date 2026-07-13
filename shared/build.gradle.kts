@@ -55,7 +55,6 @@ kotlin {
 
         val androidMain by getting {
             dependencies {
-                implementation("io.github.osmdroid:osmdroid-android:6.1.18")
                 implementation("androidx.activity:activity-compose:1.8.2")
                 implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
             }

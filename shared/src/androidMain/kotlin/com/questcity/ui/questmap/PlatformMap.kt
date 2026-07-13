@@ -1,67 +1,61 @@
 package com.questcity.ui.questmap
 
-import android.content.Context
-import android.graphics.drawable.Drawable
+import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.viewinterop.AndroidView
-import org.osmdroid.config.Configuration
-import org.osmdroid.tileprovider.tilesource.TileSourceFactory
-import org.osmdroid.util.BoundingBox
-import org.osmdroid.util.GeoPoint
-import org.osmdroid.views.MapView
-import org.osmdroid.views.overlay.Marker
-import org.osmdroid.views.overlay.OverlayWithRadius
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Color
+import com.questcity.domain.model.Location
 
 @Composable
 actual fun PlatformMap(
-    locations: List<com.questcity.domain.model.Location>,
+    locations: List<Location>,
     userLat: Double?,
     userLon: Double?,
     selectedLocationIndex: Int?,
     onLocationSelected: (Int) -> Unit,
     modifier: Modifier
 ) {
-    AndroidView(
-        factory = { context ->
-            Configuration.getInstance().userAgentValue = context.packageName
-            val mapView = MapView(context)
-            mapView.setTileSource(TileSourceFactory.MAPNIK)
-            mapView.setMultiTouchControls(true)
-            mapView.controller.setZoom(15.0)
+    Box(modifier = modifier) {
+        Canvas(
+            modifier = Modifier
+                .fillMaxSize()
+                .clickable { /* canvas interaction */ }
+        ) {
+            val centerX = size.width / 2
+            val centerY = size.height / 2
+            val scale = 2000f
 
             locations.forEachIndexed { index, location ->
-                val point = GeoPoint(location.lat, location.lon)
-                val marker = Marker(mapView)
-                marker.position = point
-                marker.title = "Локация ${index + 1}"
-                marker.setOnMarkerClickListener { _, _ ->
-                    onLocationSelected(index)
-                    true
-                }
-                mapView.overlays.add(marker)
+                val offsetX = centerX + (location.lon * scale).toFloat() % size.width
+                val offsetY = centerY - (location.lat * scale).toFloat() % size.height
+                val isSelected = index == selectedLocationIndex
 
-                val circle = OverlayWithRadius(
-                    point,
-                    location.radiusM
+                drawCircle(
+                    color = if (isSelected) Color.Red else Color.Blue,
+                    radius = if (isSelected) 20f else 12f,
+                    center = Offset(offsetX, offsetY)
                 )
-                mapView.overlays.add(circle)
+
+                drawCircle(
+                    color = if (isSelected) Color.Red.copy(alpha = 0.3f) else Color.Blue.copy(alpha = 0.3f),
+                    radius = location.radiusM.toFloat() / 2,
+                    center = Offset(offsetX, offsetY)
+                )
             }
 
             if (userLat != null && userLon != null) {
-                val userPoint = GeoPoint(userLat, userLon)
-                val userMarker = Marker(mapView)
-                userMarker.position = userPoint
-                userMarker.title = "Вы здесь"
-                mapView.overlays.add(userMarker)
-                mapView.controller.animateTo(userPoint)
-            } else if (locations.isNotEmpty()) {
-                val firstLocation = locations.first()
-                mapView.controller.animateTo(GeoPoint(firstLocation.lat, firstLocation.lon))
+                val userX = centerX + (userLon * scale).toFloat() % size.width
+                val userY = centerY - (userLat * scale).toFloat() % size.height
+                drawCircle(
+                    color = Color.Green,
+                    radius = 8f,
+                    center = Offset(userX, userY)
+                )
             }
-
-            mapView
-        },
-        modifier = modifier
-    )
+        }
+    }
 }

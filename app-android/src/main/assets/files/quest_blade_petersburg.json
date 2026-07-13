@@ -1,0 +1,196 @@
+{
+  "id": "blade_petersburg",
+  "title": {
+    "en": "Following Blade in St. Petersburg",
+    "ru": "По следам «Блэйда» в Петербурге",
+    "de": "Auf den Spuren von Blade in St. Petersburg"
+  },
+  "description": {
+    "en": "Quest through filming locations and cultural sites related to Blade: Trinity (2004) in St. Petersburg. Visit 6 locations, answer questions and discover interesting facts.",
+    "ru": "Квест по локациям, связанным со съёмками и культурой фильма «Блэйд: Троица» (2004) в Санкт-Петербурге. Пройдите 6 локаций, ответьте на вопросы и узнайте интересные факты.",
+    "de": "Quest durch Drehorte und kulturelle Stätten, die mit Blade: Trinity (2004) in St. Petersburg verbunden sind. Besuchen Sie 6 Standorte, beantworten Sie Fragen und entdecken Sie interessante Fakten."
+  },
+  "city": {
+    "en": "St. Petersburg",
+    "ru": "Санкт-Петербург",
+    "de": "Sankt Petersburg"
+  },
+  "difficulty": "medium",
+  "durationMin": 90,
+  "locations": [
+    {
+      "id": "loc_1",
+      "lat": 59.9398,
+      "lon": 30.3146,
+      "radiusM": 200.0,
+      "orderIndex": 0,
+      "tasks": [
+        {
+          "id": "task_1_1",
+          "type": "quiz",
+          "prompt": {
+            "en": "Which bridge in St. Petersburg was used during the filming of the chase scene in Blade: Trinity?",
+            "ru": "Какой мост в Петербурге использовался при съёмке сцены погони в фильме «Блэйд: Троица»?",
+            "de": "Welche Brücke in St. Petersburg wurde bei den Dreharbeiten zur Verfolgungsszene in Blade: Trinity verwendet?"
+          },
+          "answerKey": "Дворцовый мост",
+          "hints": [
+            "This bridge connects Palace Square with Vasilyevsky Island",
+            "This bridge is a drawbridge famous for its openings"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "The chase scene on the bridge was filmed over three nights. The Palace Bridge was chosen for its distinctive silhouette and drawbridge mechanism.",
+            "ru": "Сцена погони на мосту снималась в течение трёх ночей. Дворцовый мост был выбран из-за его характерного силуэта и возможности показать разводной механизм.",
+            "de": "Die Verfolgungsszene auf der Brücke wurde über drei Nächte gedreht. Die Palastbrücke wurde wegen ihrer markanten Silhouette und ihres Hubmechanismus ausgewählt."
+          }
+        }
+      ]
+    },
+    {
+      "id": "loc_2",
+      "lat": 59.9400,
+      "lon": 30.3160,
+      "radiusM": 150.0,
+      "orderIndex": 1,
+      "tasks": [
+        {
+          "id": "task_2_1",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "The scenes in St. Petersburg were filmed simultaneously with the main shooting in Romania. True or false?",
+            "ru": "Съёмки в Петербурге проводились одновременно с основными съёмками в Румынии. Это правда или вымысел?",
+            "de": "Die Szenen in St. Petersburg wurden gleichzeitig mit den Hauptdreharbeiten in Rumänien gedreht. Wahr oder falsch?"
+          },
+          "answerKey": "fiction",
+          "hints": [
+            "Filming in St. Petersburg was conducted as a separate block",
+            "Romania was used for European scenes"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "Filming in St. Petersburg took place as a separate block in September-October 2003, after completing work in Romania.",
+            "ru": "Съёмки в Петербурге проводились отдельным блоком в сентябре-октябре 2003 года, после завершения работы в Румынии.",
+            "de": "Die Dreharbeiten in St. Petersburg fanden als separater Block im September-Oktober 2003 statt, nach Abschluss der Arbeit in Rumänien."
+          }
+        }
+      ]
+    },
+    {
+      "id": "loc_3",
+      "lat": 59.9350,
+      "lon": 30.3270,
+      "radiusM": 180.0,
+      "orderIndex": 2,
+      "tasks": [
+        {
+          "id": "task_3_1",
+          "type": "count",
+          "prompt": {
+            "en": "How many locations in St. Petersburg were used during the filming of Blade: Trinity? Enter a number.",
+            "ru": "Сколько локаций в Санкт-Петербурге было использовано при съёмках фильма «Блэйд: Троица»? Введите число.",
+            "de": "Wie viele Drehorte in St. Petersburg wurden bei den Dreharbeiten zu Blade: Trinity verwendet? Geben Sie eine Zahl ein."
+          },
+          "answerKey": "6",
+          "hints": [
+            "Count the number of stops on this quest",
+            "Not all locations were main ones"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "According to IMDb, 6 main locations in St. Petersburg were used in the film.",
+            "ru": "По данным IMDb, в фильме использовано 6 основных локаций в Петербурге.",
+            "de": "Laut IMDb wurden 6 Hauptdrehorte in St. Petersburg im Film verwendet."
+          }
+        }
+      ]
+    },
+    {
+      "id": "loc_4",
+      "lat": 59.9310,
+      "lon": 30.3350,
+      "radiusM": 200.0,
+      "orderIndex": 3,
+      "tasks": [
+        {
+          "id": "task_4_1",
+          "type": "quiz",
+          "prompt": {
+            "en": "Which actor played the lead role in Blade: Trinity?",
+            "ru": "Какой актёр исполнил главную роль в фильме «Блэйд: Троица»?",
+            "de": "Welcher Schauspieler spielte die Hauptrolle in Blade: Trinity?"
+          },
+          "answerKey": "Уэсли Снайпс",
+          "hints": [
+            "This actor is also known from The Matrix trilogy",
+            "He plays a vampire hunter"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "Wesley Snipes returned to the role of Blade for the second time. According to IMDb, he performed most of his own stunts.",
+            "ru": "Уэсли Снайпс вернулся к роли Блэйда во второй раз. По данным IMDb, он самостоятельно выполнял большинство трюков.",
+            "de": "Wesley Snipes kehrte zum zweiten Mal in die Rolle von Blade zurück. Laut IMDb führte er die meisten seiner Stunts selbst aus."
+          }
+        }
+      ]
+    },
+    {
+      "id": "loc_5",
+      "lat": 59.9270,
+      "lon": 30.3400,
+      "radiusM": 150.0,
+      "orderIndex": 4,
+      "tasks": [
+        {
+          "id": "task_5_1",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "The film Blade: Trinity contains a scene shot inside Isaac's Cathedral. True or false?",
+            "ru": "В фильме «Блэйд: Троица» есть сцена, снятая внутри Исаакиевского собора. Это правда или вымысел?",
+            "de": "Der Film Blade: Trinity enthält eine Szene, die im Inneren der Isaakskathedrale gedreht wurde. Wahr oder falsch?"
+          },
+          "answerKey": "fiction",
+          "hints": [
+            "Filming inside the cathedral is prohibited",
+            "Interiors were recreated in a studio"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "According to IMDb, filming inside Isaac's Cathedral was not permitted. Interiors were recreated in a studio.",
+            "ru": "По данным IMDb, съёмки внутри Исаакиевского собора не проводились. Интерьеры были воссозданы в павильоне.",
+            "de": "Laut IMDb wurden die Dreharbeiten im Inneren der Isaakskathedrale nicht genehmigt. Die Innenaufnahmen wurden in einem Studio nachgestellt."
+          }
+        }
+      ]
+    },
+    {
+      "id": "loc_6",
+      "lat": 59.9250,
+      "lon": 30.3420,
+      "radiusM": 200.0,
+      "orderIndex": 5,
+      "tasks": [
+        {
+          "id": "task_6_1",
+          "type": "quiz",
+          "prompt": {
+            "en": "In which year was Blade: Trinity released?",
+            "ru": "Какой год выхода фильма «Блэйд: Троица»?",
+            "de": "In welchem Jahr wurde Blade: Trinity veröffentlicht?"
+          },
+          "answerKey": "2004",
+          "hints": [
+            "The film was released 5 years after Blade II",
+            "It is the third part of the trilogy"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "The film was released on December 9, 2004 in the USA. According to IMDb, the budget was 65 million dollars.",
+            "ru": "Фильм вышел 9 декабря 2004 года в США. По данным IMDb, бюджет составил 65 миллионов долларов.",
+            "de": "Der Film wurde am 9. Dezember 2004 in den USA veröffentlicht. Laut IMDb betrug das Budget 65 Millionen Dollar."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "id": "dark_knight_gotham",
+  "title": {
+    "en": "The Dark Knight: Gotham Chronicles",
+    "ru": "Тёмный рыцарь: Хроники Готэма",
+    "de": "The Dark Knight: Gotham-Chroniken"
+  },
+  "description": {
+    "en": "Expert quest about Christopher Nolan's The Dark Knight trilogy and its real-world filming locations. 5 expert-level locations.",
+    "ru": "Экспертный квест о трилогии «Тёмный рыцарь» Кристофера Нолана и реальных местах съёмок. 5 экспертных локаций.",
+    "de": "Experten-Quest über Christopher Nolans The Dark Knight-Trilogie und ihre realen Drehorte. 5 Experten-Standorte."
+  },
+  "city": {
+    "en": "Multiple Cities",
+    "ru": "Несколько городов",
+    "de": "Mehrere Städte"
+  },
+  "difficulty": "hard",
+  "durationMin": 80,
+  "locations": [
+    {
+      "id": "dk_loc_1",
+      "lat": 51.5090,
+      "lon": -0.1270,
+      "radiusM": 200.0,
+      "orderIndex": 0,
+      "tasks": [
+        {
+          "id": "dk_task_1",
+          "type": "quiz",
+          "prompt": {
+            "en": "Who played the Joker in The Dark Knight?",
+            "ru": "Кто играл Джокера в «Тёмном рыцаре»?",
+            "de": "Wer spielte den Joker in The Dark Knight?"
+          },
+          "answerKey": "Heath Ledger",
+          "hints": [
+            "He won a posthumous Academy Award",
+            "This was one of his final film roles"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "Heath Ledger played the Joker and won a posthumous Academy Award for Best Supporting Actor. He passed away before the film's release.",
+            "ru": "Хит Леджер играл Джокера и получил посмертную премию «Оскар» за лучшую мужскую роль второго плана. Он скончался до выхода фильма.",
+            "de": "Heath Ledger spielte den Joker und gewann posthum einen Academy Award als bester Nebendarsteller. Er verstarb vor der Veröffentlichung des Films."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dk_loc_2",
+      "lat": 51.5040,
+      "lon": -0.1160,
+      "radiusM": 150.0,
+      "orderIndex": 1,
+      "tasks": [
+        {
+          "id": "dk_task_2",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "The Dark Knight truck flip scene was achieved with a real truck flip. True or false?",
+            "ru": "Сцена переворота грузовика в «Тёмном рыцаре» была создана с помощью реального переворота. Это правда или вымысел?",
+            "de": "Die Lkw-Überschlag-Szene in The Dark Knight wurde mit einem echten Lkw-Überschlag realisiert. Wahr oder falsch?"
+          },
+          "answerKey": "fact",
+          "hints": [
+            "Nolan insisted on practical effects",
+            "A real 18-wheeler was flipped on a street"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "The truck flip was a practical stunt performed on a Chicago street using a real 18-wheeler. It remains one of the most impressive practical stunts in cinema history.",
+            "ru": "Переворот грузовика был реальным трюком, выполненным на улице Чикаго с использованием настоящего eighteen-колёсного грузовика. Это один из самых впечатляющих практических трюков в истории кино.",
+            "de": "Der Lkw-Überschlag war ein praktischer Stunt, der auf einer Chicagoer Straße mit einem echten 18-Rad-LKW durchgeführt wurde. Er ist einer der beeindruckendsten praktischen Stunts der Filmgeschichte."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dk_loc_3",
+      "lat": 51.5000,
+      "lon": -0.1100,
+      "radiusM": 180.0,
+      "orderIndex": 2,
+      "tasks": [
+        {
+          "id": "dk_task_3",
+          "type": "count",
+          "prompt": {
+            "en": "How many films are in The Dark Knight trilogy? Enter a number.",
+            "ru": "Сколько фильмов в трилогии «Тёмный рыцарь»? Введите число.",
+            "de": "Wie viele Filme umfasst The Dark Knight-Trilogie? Geben Sie eine Zahl ein."
+          },
+          "answerKey": "3",
+          "hints": [
+            "Batman Begins, The Dark Knight, and The Dark Knight Rises",
+            "All three were directed by Christopher Nolan"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "The Dark Knight trilogy consists of Batman Begins (2005), The Dark Knight (2008), and The Dark Knight Rises (2012), all directed by Christopher Nolan.",
+            "ru": "Трилогия «Тёмный рыцарь» состоит из «Бэтмен: Начало» (2005), «Тёмный рыцарь» (2008) и «Тёмный рыцарь: Возрождение» (2012), все поставлены Кристофером Ноланом.",
+            "de": "The Dark Knight-Trilogie besteht aus Batman Begins (2005), The Dark Knight (2008) und The Dark Knight Rises (2012), alle inszeniert von Christopher Nolan."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dk_loc_4",
+      "lat": 51.4980,
+      "lon": -0.1200,
+      "radiusM": 200.0,
+      "orderIndex": 3,
+      "tasks": [
+        {
+          "id": "dk_task_4",
+          "type": "quiz",
+          "prompt": {
+            "en": "What city was used as the primary filming location for Gotham City in The Dark Knight?",
+            "ru": "Какой город использовался как основное место съёмок Готэма в «Тёмном рыцаре»?",
+            "de": "Welche Stadt wurde als Hauptdrehort für Gotham City in The Dark Knight verwendet?"
+          },
+          "answerKey": "Chicago",
+          "hints": [
+            "This city has distinctive architecture",
+            "Batman Begins used different locations"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "Chicago served as the primary filming location for Gotham City in The Dark Knight, with its distinctive architecture providing the perfect backdrop.",
+            "ru": "Чикаго служил основным местом съёмок Готэма в «Тёмном рыцаре», его характерная архитектура идеально подходила для декораций.",
+            "de": "Chicago diente als Hauptdrehort für Gotham City in The Dark Knight, wobei seine markante Architektur die perfekte Kulisse bot."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dk_loc_5",
+      "lat": 51.4950,
+      "lon": -0.1300,
+      "radiusM": 150.0,
+      "orderIndex": 4,
+      "tasks": [
+        {
+          "id": "dk_task_5",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "The Dark Knight was the first superhero film to gross over $1 billion worldwide. True or false?",
+            "ru": "«Тёмный рыцарь» стал первым фильмом о супергерое, собравшим более 1 миллиарда долларов по всему миру. Это правда или вымысел?",
+            "de": "The Dark Knight war der erste Superheldenfilm, der weltweit über 1 Milliarde Dollar einspielte. Wahr oder falsch?"
+          },
+          "answerKey": "fiction",
+          "hints": [
+            "It was very successful but not the first billion-dollar superhero film",
+            "The Avengers later achieved this milestone"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "The Dark Knight grossed over $1 billion worldwide but was not the first superhero film to do so. It was the highest-grossing film of 2008.",
+            "ru": "«Тёмный рыцарь» собрал более 1 миллиарда долларов по всему миру, но не первым фильмом о супергерое, добившимся этого. Он стал самым кассовым фильмом 2008 года.",
+            "de": "The Dark Knight spielte weltweit über 1 Milliarde Dollar ein, war aber nicht der erste Superheldenfilm, der dies erreichte. Er war der erfolgreichste Film des Jahres 2008."
+          }
+        }
+      ]
+    }
+  ]
+}
