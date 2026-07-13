@@ -1,5 +1,6 @@
 package com.questcity.domain.geo
 
+import kotlin.math.PI
 import kotlin.math.asin
 import kotlin.math.cos
 import kotlin.math.pow
@@ -10,15 +11,16 @@ object GeoUtils {
     const val EARTH_RADIUS_M = 6_371_000.0
     const val DEFAULT_RADIUS_M = 150.0
     const val GPS_DRIFT_TOLERANCE_M = 30.0
+    private val DEG_TO_RAD: Double = PI / 180.0
 
     fun haversineDistance(userLat: Double, userLon: Double, targetLat: Double, targetLon: Double): Double {
-        val dLat = Math.toRadians(targetLat - userLat)
-        val dLon = Math.toRadians(targetLon - userLon)
-        val latRad = Math.toRadians(userLat)
-        val targetLatRad = Math.toRadians(targetLat)
+        val dLat = (targetLat - userLat) * DEG_TO_RAD
+        val dLon = (targetLon - userLon) * DEG_TO_RAD
+        val latRad = userLat * DEG_TO_RAD
+        val targetLatRad = targetLat * DEG_TO_RAD
 
-        val a = sin(dLat / 2).pow(2) + cos(latRad) * cos(targetLatRad) * sin(dLon / 2).pow(2)
-        val c = 2 * asin(sqrt(a))
+        val a = sin(dLat / 2.0).pow(2) + cos(latRad) * cos(targetLatRad) * sin(dLon / 2.0).pow(2)
+        val c = 2.0 * asin(sqrt(a))
         return EARTH_RADIUS_M * c
     }
 

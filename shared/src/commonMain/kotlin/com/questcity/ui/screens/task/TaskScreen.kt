@@ -14,6 +14,7 @@ import androidx.compose.ui.unit.dp
 import com.questcity.domain.model.TaskType
 import com.questcity.ui.i18n.Language
 import com.questcity.ui.i18n.LocalStrings
+import com.questcity.ui.i18n.formatSafe
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -125,7 +126,11 @@ fun TaskContent(
                 modifier = Modifier.padding(16.dp)
             ) {
                 Text(
-                    text = task.type.label,
+                    text = when (task.type) {
+                        com.questcity.domain.model.TaskType.QUIZ -> strings.quizLabel
+                        com.questcity.domain.model.TaskType.COUNT -> strings.countLabel
+                        com.questcity.domain.model.TaskType.FACT_OR_FICT -> strings.factOrFictLabel
+                    },
                     style = MaterialTheme.typography.labelMedium,
                     color = MaterialTheme.colorScheme.primary
                 )
@@ -399,7 +404,7 @@ fun ResultCard(
             if (imdbFact.isNotBlank()) {
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(
-                    text = strings.imdbFact.format(imdbFact),
+                    text = strings.imdbFact.formatSafe(imdbFact),
                     style = MaterialTheme.typography.bodySmall
                 )
             }
@@ -443,7 +448,7 @@ fun HintsCard(hintsJson: String, hintsShown: Int) {
             )
             Spacer(modifier = Modifier.height(8.dp))
             Text(
-                text = strings.hintOf.format(hintsShown, MAX_HINTS),
+                text = strings.hintOf.formatSafe(hintsShown, MAX_HINTS),
                 style = MaterialTheme.typography.bodySmall
             )
         }
@@ -453,5 +458,5 @@ fun HintsCard(hintsJson: String, hintsShown: Int) {
 private fun formatTime(seconds: Int): String {
     val minutes = seconds / 60
     val secs = seconds % 60
-    return "%d:%02d".format(minutes, secs)
+    return "%d:%02d".formatSafe(minutes, secs)
 }

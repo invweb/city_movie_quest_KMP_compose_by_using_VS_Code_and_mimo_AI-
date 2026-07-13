@@ -57,5 +57,8 @@ val Russian = Strings(
     fontSizeLarge = "Большой",
     back = "Назад",
     appDescription = "Исследуйте места съёмок фильмов через городские квесты",
-    version = "Версия %s"
+    version = "Версия %s",
+    quizLabel = "Викторина",
+    countLabel = "Подсчёт",
+    factOrFictLabel = "Факт или вымысел"
 )

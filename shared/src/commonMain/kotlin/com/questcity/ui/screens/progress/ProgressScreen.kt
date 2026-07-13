@@ -19,6 +19,7 @@ import com.questcity.domain.usecase.CalculateProgressUseCase
 import com.questcity.domain.usecase.ProgressInfo
 import com.questcity.ui.i18n.Language
 import com.questcity.ui.i18n.LocalStrings
+import com.questcity.ui.i18n.formatSafe
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -233,7 +234,7 @@ fun StatisticsCard(state: ProgressScreenState) {
 
             val completedCount = state.quests.count { it.isCompleted }
             Text(
-                text = strings.questsFinished.format(completedCount, state.quests.size),
+                text = strings.questsFinished.formatSafe(completedCount, state.quests.size),
                 style = MaterialTheme.typography.bodyMedium
             )
         }

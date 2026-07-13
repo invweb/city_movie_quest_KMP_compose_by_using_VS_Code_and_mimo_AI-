@@ -11,6 +11,7 @@ import androidx.compose.ui.unit.dp
 import com.questcity.domain.model.Difficulty
 import com.questcity.domain.model.Quest
 import com.questcity.ui.i18n.LocalStrings
+import com.questcity.ui.i18n.formatSafe
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -181,7 +182,7 @@ fun QuestCard(
                 modifier = Modifier.fillMaxWidth()
             )
             Text(
-                text = strings.percentComplete.format((progressPercentage * 100).toInt()),
+                text = strings.percentComplete.formatSafe((progressPercentage * 100).toInt()),
                 style = MaterialTheme.typography.bodySmall,
                 modifier = Modifier.padding(top = 4.dp)
             )

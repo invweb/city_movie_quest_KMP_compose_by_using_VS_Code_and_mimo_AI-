@@ -57,5 +57,8 @@ data class Strings(
     val fontSizeLarge: String,
     val back: String,
     val appDescription: String,
-    val version: String
+    val version: String,
+    val quizLabel: String,
+    val countLabel: String,
+    val factOrFictLabel: String
 )

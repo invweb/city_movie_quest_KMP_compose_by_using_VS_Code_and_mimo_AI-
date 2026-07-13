@@ -57,5 +57,8 @@ val German = Strings(
     fontSizeLarge = "Groß",
     back = "Zurück",
     appDescription = "Erkunden Sie Drehorte durch Stadt-Quests",
-    version = "Version %s"
+    version = "Version %s",
+    quizLabel = "Quiz",
+    countLabel = "Zählung",
+    factOrFictLabel = "Fakt oder Fiktion"
 )

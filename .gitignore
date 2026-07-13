@@ -14,3 +14,5 @@ local.properties
 *.war
 *.ear
 *.log
+.mimocode/
+kotlin-js-store/

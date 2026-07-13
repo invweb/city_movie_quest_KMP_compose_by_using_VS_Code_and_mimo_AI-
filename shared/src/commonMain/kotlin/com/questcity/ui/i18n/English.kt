@@ -57,5 +57,8 @@ val English = Strings(
     fontSizeLarge = "Large",
     back = "Back",
     appDescription = "Explore movie filming locations through city quests",
-    version = "Version %s"
+    version = "Version %s",
+    quizLabel = "Quiz",
+    countLabel = "Count",
+    factOrFictLabel = "Fact or Fiction"
 )
