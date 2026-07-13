@@ -22,6 +22,12 @@ import com.questcity.ui.screens.task.TaskAction
 import com.questcity.ui.screens.task.TaskScreen
 import com.questcity.ui.screens.task.TaskViewModel
 import com.questcity.ui.theme.QuestCityTheme
+import kotlinx.browser.window
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.await
+import kotlinx.coroutines.launch
+import org.w3c.fetch.Response
 
 @OptIn(ExperimentalComposeUiApi::class)
 fun main() {
@@ -29,6 +35,40 @@ fun main() {
     val progressRepository = InMemoryProgressRepository()
     val calculateProgress = CalculateProgressUseCase()
     val checkAnswerUseCase = CheckAnswerUseCase()
+
+    val scope = CoroutineScope(Dispatchers.Default)
+    val questFiles = listOf(
+        "quest_blade_petersburg.json",
+        "quest_indiana_jones_moscow.json",
+        "quest_bond_petersburg.json",
+        "quest_matrix_moscow.json",
+        "quest_titanic_petersburg.json",
+        "quest_john_wick_moscow.json",
+        "quest_harry_potter_london.json",
+        "quest_inception_cities.json",
+        "quest_dark_knight_gotham.json"
+    )
+
+    scope.launch {
+        for (fileName in questFiles) {
+            try {
+                val paths = listOf(
+                    "composeResources/quest_city.shared.generated.resources/files/$fileName",
+                    "files/$fileName"
+                )
+                for (path in paths) {
+                    val response: Response = window.fetch(path).await()
+                    if (response.ok) {
+                        val text = response.text().await()
+                        questRepository.importQuestFromJson(text)
+                        break
+                    }
+                }
+            } catch (e: Exception) {
+                println("Failed to load quest $fileName: ${e.message}")
+            }
+        }
+    }
 
     val catalogViewModel = CatalogViewModel(
         questRepository = questRepository,

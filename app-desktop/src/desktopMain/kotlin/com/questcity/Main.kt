@@ -51,12 +51,17 @@ fun main() = application {
     for (fileName in questFiles) {
         try {
             val json = object {}.javaClass.classLoader
-                .getResourceAsStream("files/$fileName")
+                .getResourceAsStream("composeResources/quest_city.shared.generated.resources/files/$fileName")
                 ?.bufferedReader()?.readText()
+                ?: object {}.javaClass.classLoader
+                    .getResourceAsStream("files/$fileName")
+                    ?.bufferedReader()?.readText()
             if (json != null) {
                 kotlinx.coroutines.runBlocking {
                     questRepository.importQuestFromJson(json)
                 }
+            } else {
+                println("Quest file not found: $fileName")
             }
         } catch (e: Exception) {
             println("Failed to load quest $fileName: ${e.message}")
