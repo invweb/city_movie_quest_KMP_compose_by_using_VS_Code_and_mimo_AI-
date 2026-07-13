@@ -1,0 +1,167 @@
+{
+  "id": "inception_cities",
+  "title": {
+    "en": "Inception: Dreams Across Cities",
+    "ru": "Начало: Сны сквозь города",
+    "de": "Inception: Träume durch Städte"
+  },
+  "description": {
+    "en": "Advanced quest about Christopher Nolan's Inception and its connection to various world cities. 5 challenging locations.",
+    "ru": "Сложный квест о фильме «Начало» Кристофера Нолана и его связи с различными городами мира. 5 сложных локаций.",
+    "de": "Schwierige Quest über Christopher Nolans Inception und seine Verbindung zu verschiedenen Weltstädten. 5 anspruchsvolle Standorte."
+  },
+  "city": {
+    "en": "Multiple Cities",
+    "ru": "Несколько городов",
+    "de": "Mehrere Städte"
+  },
+  "difficulty": "hard",
+  "durationMin": 75,
+  "locations": [
+    {
+      "id": "inc_loc_1",
+      "lat": 51.5080,
+      "lon": -0.1250,
+      "radiusM": 200.0,
+      "orderIndex": 0,
+      "tasks": [
+        {
+          "id": "inc_task_1",
+          "type": "quiz",
+          "prompt": {
+            "en": "Who directed Inception?",
+            "ru": "Кто поставил фильм «Начало»?",
+            "de": "Wer hat Inception inszeniert?"
+          },
+          "answerKey": "Christopher Nolan",
+          "hints": [
+            "This director also made The Dark Knight trilogy",
+            "He is known for complex narratives"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "Christopher Nolan wrote and directed Inception (2010). The film won four Academy Awards and grossed over $836 million worldwide.",
+            "ru": "Кристофер Нолан написал и поставил «Начало» (2010). Фильм получил четыре премии «Оскар» и собрал более 836 миллионов долларов по всему миру.",
+            "de": "Christopher Nolan schrieb und inszenierte Inception (2010). Der Film gewann vier Academy Awards und spielte über 836 Millionen Dollar weltweit ein."
+          }
+        }
+      ]
+    },
+    {
+      "id": "inc_loc_2",
+      "lat": 51.5050,
+      "lon": -0.1150,
+      "radiusM": 150.0,
+      "orderIndex": 1,
+      "tasks": [
+        {
+          "id": "inc_task_2",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "The famous rotating hallway fight scene was achieved using a practical rotating set. True or false?",
+            "ru": "Знаменитая сцена драки в вращающемся коридоре была создана с помощью физически вращающейся декорации. Это правда или вымысел?",
+            "de": "Die berühmte KampfSzene im rotierenden Flur wurde mit einem praktischen rotierenden Set realisiert. Wahr oder falsch?"
+          },
+          "answerKey": "fact",
+          "hints": [
+            "Nolan prefers practical effects over CGI",
+            "The set was a giant rotating tube"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "The rotating hallway was a massive practical set built at Leavesden Studios. Joseph Gordon-Levitt trained for weeks to perform the fight scene in the rotating environment.",
+            "ru": "Вращающийся коридор был масштабной декорацией, построенной на студии «Ливсден». Джозеф Гордон-Левитт тренировался неделями, чтобы снять сцену драки во вращающейся среде.",
+            "de": "Der rotierende Flur war ein großes praktisches Set, das in den Leavesden Studios gebaut wurde. Joseph Gordon-Levitt trainierte Wochenlang für die Kampfszene in der rotierenden Umgebung."
+          }
+        }
+      ]
+    },
+    {
+      "id": "inc_loc_3",
+      "lat": 51.5100,
+      "lon": -0.1100,
+      "radiusM": 180.0,
+      "orderIndex": 2,
+      "tasks": [
+        {
+          "id": "inc_task_3",
+          "type": "count",
+          "prompt": {
+            "en": "How many dream levels are shown in the main heist of Inception? Enter a number.",
+            "ru": "Сколько уровней сна показано в основной миссии «Начала»? Введите число.",
+            "de": "Wie viele Traumebenen werden beim Haupteinbruch in Inception gezeigt? Geben Sie eine Zahl ein."
+          },
+          "answerKey": "3",
+          "hints": [
+            "There is the rainy city level, the hotel level, and the snow fortress",
+            "Plus Limbo as a separate space"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "The main heist in Inception involves three dream levels: the rainy city (Yusuf's dream), the hotel (Arthur's dream), and the snow fortress (Eames' dream).",
+            "ru": "Основная миссия в «Начале» включает три уровня сна: дождливый город (сон Юсуфа), отель (сон Артура) и снежная крепость (сон Имса).",
+            "de": "Der Haupteinbruch in Inception umfasst drei Traumebenen: die Regenstadt (Yusufs Traum), das Hotel (Arthurs Traum) und die Schneefestung (Eames' Traum)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "inc_loc_4",
+      "lat": 51.5070,
+      "lon": -0.1200,
+      "radiusM": 200.0,
+      "orderIndex": 3,
+      "tasks": [
+        {
+          "id": "inc_task_4",
+          "type": "quiz",
+          "prompt": {
+            "en": "What object does Cobb use as a totem to distinguish dreams from reality?",
+            "ru": "Каким предметом Кобб пользуется как тотемом, чтобы отличать сны от реальности?",
+            "de": "Welchen Gegenstand benutzt Cobb als Totem, um Träume von der Realität zu unterscheiden?"
+          },
+          "answerKey": "Spinning top",
+          "hints": [
+            "It belonged to someone who is no longer alive",
+            "The ending leaves it ambiguous"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "Cobb's totem is a small spinning top that belonged to his deceased wife Mal. The film's famous ending leaves the top's fate ambiguous.",
+            "ru": "Тотемом Кобба является маленький волчок, который принадлежал его покойной жене Мэл. Знаменитая концовка фильма оставляет судьбу волчка двусмысленной.",
+            "de": "Cobbs Totem ist ein kleiner Kreisel, der seiner verstorbenen Frau Mal gehörte. Das berühmte Ende des Films lässt das Schicksal des Kreisels im Unklaren."
+          }
+        }
+      ]
+    },
+    {
+      "id": "inc_loc_5",
+      "lat": 51.5030,
+      "lon": -0.1300,
+      "radiusM": 150.0,
+      "orderIndex": 4,
+      "tasks": [
+        {
+          "id": "inc_task_5",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "The inception concept in the film was inspired by lucid dreaming techniques. True or false?",
+            "ru": "Концепция инцепции в фильме была вдохновлена техниками осознанных сновидений. Это правда или вымысел?",
+            "de": "Das Inception-Konzept im Film wurde von luziden Traumtechniken inspiriert. Wahr oder falsch?"
+          },
+          "answerKey": "fact",
+          "hints": [
+            "Nolan researched dream states extensively",
+            "The film explores the boundaries of consciousness"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "Christopher Nolan was inspired by lucid dreaming and spent years developing the concept. He explored ideas about consciousness, dreams, and the nature of reality.",
+            "ru": "Кристофер Нолан был вдохновлён осознанными сновидениями и потратил годы на разработку концепции. Он исследовал идеи о сознании, снах и природе реальности.",
+            "de": "Christopher Nolan wurde von luziden Träumen inspiriert und verbrachte Jahre mit der Entwicklung des Konzepts. Er erforschte Ideen über Bewusstsein, Träume und die Natur der Realität."
+          }
+        }
+      ]
+    }
+  ]
+}

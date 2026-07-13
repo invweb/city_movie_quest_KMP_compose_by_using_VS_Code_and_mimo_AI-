@@ -1,0 +1,167 @@
+{
+  "id": "bond_petersburg",
+  "title": {
+    "en": "Agent 007: St. Petersburg Secrets",
+    "ru": "Агент 007: Петербургские тайны",
+    "de": "Agent 007: St. Petersburger Geheimnisse"
+  },
+  "description": {
+    "en": "Quest through places related to James Bond and spy cinema culture in St. Petersburg. 5 locations with riddles and facts.",
+    "ru": "Квест по местам, связанным с культурой Джеймса Бонда и шпионского кино в Санкт-Петербурге. 5 локаций с загадками и фактами.",
+    "de": "Quest durch Orte, die mit James Bond und der Spionagefilmkultur in St. Petersburg verbunden sind. 5 Standorte mit Rätseln und Fakten."
+  },
+  "city": {
+    "en": "St. Petersburg",
+    "ru": "Санкт-Петербург",
+    "de": "Sankt Petersburg"
+  },
+  "difficulty": "hard",
+  "durationMin": 75,
+  "locations": [
+    {
+      "id": "bond_loc_1",
+      "lat": 59.9400,
+      "lon": 30.3160,
+      "radiusM": 200.0,
+      "orderIndex": 0,
+      "tasks": [
+        {
+          "id": "bond_task_1",
+          "type": "quiz",
+          "prompt": {
+            "en": "Which film starring Daniel Craig was partially shot in St. Petersburg?",
+            "ru": "Какой фильм с Дэниелом Крэйгом частично снимался в Санкт-Петербурге?",
+            "de": "Welcher Film mit Daniel Craig wurde teilweise in St. Petersburg gedreht?"
+          },
+          "answerKey": "Skyfall",
+          "hints": [
+            "This film was released in 2012",
+            "It is the 23rd James Bond film"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "According to IMDb, some scenes from Skyfall (2012) were filmed in St. Petersburg. The film's budget was 200 million dollars.",
+            "ru": "По данным IMDb, некоторые сцены фильма «Координаты «Скайфолл» (2012) снимались в Санкт-Петербурге. Бюджет фильма составил 200 миллионов долларов.",
+            "de": "Laut IMDb wurden einige Szenen aus Skyfall (2012) in St. Petersburg gedreht. Das Budget des Films betrug 200 Millionen Dollar."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bond_loc_2",
+      "lat": 59.9350,
+      "lon": 30.3270,
+      "radiusM": 150.0,
+      "orderIndex": 1,
+      "tasks": [
+        {
+          "id": "bond_task_2",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "Daniel Craig is the first actor to play Bond who was born after the original film series began. True or false?",
+            "ru": "Дэниел Крэйг — первый актёр, исполнивший роль Бонда, родившийся после начала оригинальной серии фильмов. Это правда или вымысел?",
+            "de": "Daniel Craig ist der erste Bond-Darsteller, der nach Beginn der Originalfilmreihe geboren wurde. Wahr oder falsch?"
+          },
+          "answerKey": "fact",
+          "hints": [
+            "The first Bond film was released in 1962",
+            "Daniel Craig was born in 1968"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "According to IMDb, Daniel Craig (born March 2, 1968) is indeed the first Bond born after the release of the first film Dr. No (1962).",
+            "ru": "По данным IMDb, Дэниел Крэйг (род. 2 марта 1968) действительно является первым Бондом, родившимся после выхода первого фильма «Доктор Но» (1962).",
+            "de": "Laut IMDb ist Daniel Craig (geb. 2. März 1968) tatsächlich der erste Bond, der nach der Veröffentlichung des ersten Films Dr. No (1962) geboren wurde."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bond_loc_3",
+      "lat": 59.9310,
+      "lon": 30.3350,
+      "radiusM": 180.0,
+      "orderIndex": 2,
+      "tasks": [
+        {
+          "id": "bond_task_3",
+          "type": "count",
+          "prompt": {
+            "en": "How many actors played the lead role of James Bond in the official film series? Enter a number.",
+            "ru": "Сколько актёров в официальной серии фильмов о Джеймсе Бонде играли главную роль? Введите число.",
+            "de": "Wie viele Schauspieler spielten die Hauptrolle des James Bond in der offiziellen Filmreihe? Geben Sie eine Zahl ein."
+          },
+          "answerKey": "6",
+          "hints": [
+            "The first was Sean Connery",
+            "The latest was Daniel Craig"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "According to IMDb, six actors played James Bond: Sean Connery, George Lazenby, Roger Moore, Timothy Dalton, Pierce Brosnan, and Daniel Craig.",
+            "ru": "По данным IMDb, главную роль Джеймса Бонда играли 6 актёров: Шон Коннери, Джордж Лэзенби, Роджер Мур, Тимоти Далтон, Пирс Броснан и Дэниел Крэйг.",
+            "de": "Laut IMDb spielten sechs Schauspieler die Hauptrolle des James Bond: Sean Connery, George Lazenby, Roger Moore, Timothy Dalton, Pierce Brosnan und Daniel Craig."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bond_loc_4",
+      "lat": 59.9270,
+      "lon": 30.3400,
+      "radiusM": 200.0,
+      "orderIndex": 3,
+      "tasks": [
+        {
+          "id": "bond_task_4",
+          "type": "quiz",
+          "prompt": {
+            "en": "Which actor played Bond in Casino Royale (2006)?",
+            "ru": "Какой актёр исполнил роль Бонда в фильме «Казино Рояль» (2006)?",
+            "de": "Welcher Schauspieler spielte Bond in Casino Royale (2006)?"
+          },
+          "answerKey": "Daniel Craig",
+          "hints": [
+            "This actor played Bond in the last five films",
+            "He is known from The Girl with the Dragon Tattoo"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "Daniel Craig debuted as Bond in Casino Royale (2006). According to IMDb, his casting sparked debate among fans, but the film became one of the most successful in the series.",
+            "ru": "Дэниел Крэйг дебютировал в роли Бонда в фильме «Казино Рояль» (2006). По данным IMDb, его кандидатура вызвала споры среди фанатов, но фильм стал одним из самых успешных в серии.",
+            "de": "Daniel Craig debütierte als Bond in Casino Royale (2006). Laut IMDb löste seine Besetzung Debatten unter Fans aus, aber der Film wurde einer der erfolgreichsten der Reihe."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bond_loc_5",
+      "lat": 59.9250,
+      "lon": 30.3420,
+      "radiusM": 150.0,
+      "orderIndex": 4,
+      "tasks": [
+        {
+          "id": "bond_task_5",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "In From Russia with Love (1963), the Russia scenes were shot in actual locations in Leningrad. True or false?",
+            "ru": "В фильме «Из России с любовью» (1963) сцены в России снимались в actual locations of Ленинграда. Это правда или вымысел?",
+            "de": "In James Bond jagt Dr. No (1963) wurden die Russland-Szenen an Originalstandorten in Leningrad gedreht. Wahr oder falsch?"
+          },
+          "answerKey": "fiction",
+          "hints": [
+            "Filming took place during the Cold War",
+            "The crew could not obtain permission"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "According to IMDb, the Russia scenes in From Russia with Love were not filmed in Leningrad, but in Istanbul (Turkey), which substituted for the Soviet city. On-location filming in the USSR was impossible.",
+            "ru": "По данным IMDb, сцены «Из России с любовью» в России снимались не в Ленинграде, а в Стамбуле (Турция), который заменил советский город. Натурные съёмки в СССР были невозможны.",
+            "de": "Laut IMDb wurden die Russland-Szenen aus James Bond jagt Dr. No nicht in Leningrad, sondern in Istanbul (Türkei) gedreht, das die sowjetische Stadt ersetzte. Dreharbeiten in der UdSSR waren unmöglich."
+          }
+        }
+      ]
+    }
+  ]
+}

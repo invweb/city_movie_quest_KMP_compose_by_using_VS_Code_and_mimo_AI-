@@ -1,0 +1,167 @@
+{
+  "id": "harry_potter_london",
+  "title": {
+    "en": "Harry Potter: London Magic",
+    "ru": "Гарри Поттер: Лондонская магия",
+    "de": "Harry Potter: Londons Magie"
+  },
+  "description": {
+    "en": "Quest through London locations connected to the Harry Potter film series. 5 locations with magical facts.",
+    "ru": "Квест по лондонским локациям, связанным с фильмами о Гарри Поттере. 5 локаций с волшебными фактами.",
+    "de": "Quest durch Londoner Drehorte, die mit der Harry-Potter-Filmreihe verbunden sind. 5 Standorte mit magischen Fakten."
+  },
+  "city": {
+    "en": "London",
+    "ru": "Лондон",
+    "de": "London"
+  },
+  "difficulty": "medium",
+  "durationMin": 55,
+  "locations": [
+    {
+      "id": "hp_loc_1",
+      "lat": 51.5010,
+      "lon": -0.1246,
+      "radiusM": 200.0,
+      "orderIndex": 0,
+      "tasks": [
+        {
+          "id": "hp_task_1",
+          "type": "quiz",
+          "prompt": {
+            "en": "Which train station was used as the inspiration for Platform 9¾?",
+            "ru": "Какая железнодорожная станция послужила прообразом платформы 9¾?",
+            "de": "Welcher Bahnhof diente als Vorlage für Gleis 9¾?"
+          },
+          "answerKey": "King's Cross",
+          "hints": [
+            "It is one of London's major terminals",
+            "There is now a photo opportunity at the station"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "King's Cross Station in London was used as the filming location for Platform 9¾. A permanent photo opportunity has been installed at the station.",
+            "ru": "Станция «Кингс-Кросс» в Лондоне использовалась как место съёмок платформы 9¾. На станции установлена постоянная фотозона.",
+            "de": "Der King's Cross Station in London wurde als Drehort für Gleis 9¾ verwendet. Eine dauerhafte Fotogelegenheit wurde am Bahnhof eingerichtet."
+          }
+        }
+      ]
+    },
+    {
+      "id": "hp_loc_2",
+      "lat": 51.5050,
+      "lon": -0.1150,
+      "radiusM": 150.0,
+      "orderIndex": 1,
+      "tasks": [
+        {
+          "id": "hp_task_2",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "The Harry Potter films were all directed by the same person. True or false?",
+            "ru": "Все фильмы о Гарри Поттере были поставлены одним режиссёром. Это правда или вымысел?",
+            "de": "Alle Harry-Potter-Filme wurden von derselben Person inszeniert. Wahr oder falsch?"
+          },
+          "answerKey": "fiction",
+          "hints": [
+            "Different directors worked on different films",
+            "Chris Columbus directed the first two"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "The Harry Potter series had four different directors: Chris Columbus (1-2), Alfonso Cuarón (3), Mike Newell (4), and David Yates (5-8).",
+            "ru": "Над серией «Гарри Поттер» работали четыре разных режиссёра: Крис Коламбус (1-2), Альфонсо Куарон (3), Майк Ньюэлл (4) и Дэвид Йейтс (5-8).",
+            "de": "Die Harry-Potter-Reihe hatte vier verschiedene Regisseure: Chris Columbus (1-2), Alfonso Cuarón (3), Mike Newell (4) und David Yates (5-8)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "hp_loc_3",
+      "lat": 51.5080,
+      "lon": -0.1100,
+      "radiusM": 180.0,
+      "orderIndex": 2,
+      "tasks": [
+        {
+          "id": "hp_task_3",
+          "type": "count",
+          "prompt": {
+            "en": "How many Harry Potter films were made in total? Enter a number.",
+            "ru": "Сколько фильмов о Гарри Поттере было снято всего? Введите число.",
+            "de": "Wie viele Harry-Potter-Filme wurden insgesamt gedreht? Geben Sie eine Zahl ein."
+          },
+          "answerKey": "8",
+          "hints": [
+            "There were 7 books",
+            "The last book was split into two films"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "There are 8 Harry Potter films based on 7 books. The final book, Deathly Hallows, was split into two parts.",
+            "ru": "Снято 8 фильмов о Гарри Поттере по 7 книгам. Последняя книга, «Дары Смерти», была разделена на две части.",
+            "de": "Es gibt 8 Harry-Potter-Filme basierend auf 7 Büchern. Das letzte Buch, Die Heiligtümer des Todes, wurde in zwei Teile aufgeteilt."
+          }
+        }
+      ]
+    },
+    {
+      "id": "hp_loc_4",
+      "lat": 51.5100,
+      "lon": -0.1200,
+      "radiusM": 200.0,
+      "orderIndex": 3,
+      "tasks": [
+        {
+          "id": "hp_task_4",
+          "type": "quiz",
+          "prompt": {
+            "en": "What is the name of the actor who plays Harry Potter?",
+            "ru": "Как зовут актёра, который играет Гарри Поттера?",
+            "de": "Wie heißt der Schauspieler, der Harry Potter spielt?"
+          },
+          "answerKey": "Daniel Radcliffe",
+          "hints": [
+            "He was 11 years old when filming began",
+            "He has since starred in many other films"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "Daniel Radcliffe was cast as Harry Potter at age 11 and appeared in all eight films of the series.",
+            "ru": "Даниэл Рэдклифф был выбран на роль Гарри Поттера в 11 лет и снялся во всех восьми фильмах серии.",
+            "de": "Daniel Radcliffe wurde im Alter von 11 Jahren als Harry Potter besetzt und war in allen acht Filmen der Reihe zu sehen."
+          }
+        }
+      ]
+    },
+    {
+      "id": "hp_loc_5",
+      "lat": 51.5070,
+      "lon": -0.1300,
+      "radiusM": 150.0,
+      "orderIndex": 4,
+      "tasks": [
+        {
+          "id": "hp_task_5",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "The Great Hall scenes were filmed in a real medieval hall. True or false?",
+            "ru": "Сцены Большого зала снимались в настоящем средневековом зале. Это правда или вымысел?",
+            "de": "Die Szenen im Großen Saal wurden in einem echten mittelalterlichen Saal gedreht. Wahr oder falsch?"
+          },
+          "answerKey": "fiction",
+          "hints": [
+            "The Great Hall was a set built at Leavesden Studios",
+            "The ceiling effects were added digitally"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "The Great Hall was built as a set at Leavesden Studios. The enchanted ceiling was created using CGI effects.",
+            "ru": "Большой зал был построен как декорация на студии «Ливсден». Зачарованный потолок был создан с помощью CGI-эффектов.",
+            "de": "Der Große Saal wurde als Set in den Leavesden Studios gebaut. Die verzauberte Decke wurde mit CGI-Effekten erstellt."
+          }
+        }
+      ]
+    }
+  ]
+}

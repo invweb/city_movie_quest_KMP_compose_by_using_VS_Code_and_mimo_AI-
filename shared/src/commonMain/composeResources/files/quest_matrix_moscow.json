@@ -1,0 +1,167 @@
+{
+  "id": "matrix_moscow",
+  "title": {
+    "en": "Following The Matrix in Moscow",
+    "ru": "По следам «Матрицы» в Москве",
+    "de": "Auf den Spuren von The Matrix in Moskau"
+  },
+  "description": {
+    "en": "Quest through locations related to the cultural impact of The Matrix trilogy in Moscow. 5 locations with questions and facts.",
+    "ru": "Квест по локациям, связанным с культурным влиянием трилогии «Матрица» в Москве. 5 локаций с вопросами и фактами.",
+    "de": "Quest durch Orte, die mit dem kulturellen Einfluss der Matrix-Trilogie in Moskau verbunden sind. 5 Standorte mit Fragen und Fakten."
+  },
+  "city": {
+    "en": "Moscow",
+    "ru": "Москва",
+    "de": "Moskau"
+  },
+  "difficulty": "easy",
+  "durationMin": 45,
+  "locations": [
+    {
+      "id": "mx_loc_1",
+      "lat": 55.7600,
+      "lon": 37.6150,
+      "radiusM": 200.0,
+      "orderIndex": 0,
+      "tasks": [
+        {
+          "id": "mx_task_1",
+          "type": "quiz",
+          "prompt": {
+            "en": "Who directed The Matrix trilogy?",
+            "ru": "Кто поставил трилогию «Матрица»?",
+            "de": "Wer hat die Matrix-Trilogie inszeniert?"
+          },
+          "answerKey": "Wachowskis",
+          "hints": [
+            "These are siblings",
+            "They later created Sense8"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "The Matrix was directed by the Wachowskis (Lana and Lilly). The first film was released in 1999.",
+            "ru": "«Матрицу» поставили братья Вачовски (Лана и Лилли). Первый фильм вышел в 1999 году.",
+            "de": "The Matrix wurde von den Wachowskis (Lana und Lilly) inszeniert. Der erste Film wurde 1999 veröffentlicht."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mx_loc_2",
+      "lat": 55.7550,
+      "lon": 37.6200,
+      "radiusM": 150.0,
+      "orderIndex": 1,
+      "tasks": [
+        {
+          "id": "mx_task_2",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "Keanu Reeves did most of his own martial arts stunts in The Matrix. True or false?",
+            "ru": "Киану Ривз выполнял большинство боевых трюков в «Матрице» самостоятельно. Это правда или вымысел?",
+            "de": "Keanu Reeves führte die meisten seiner Kampfstunts in The Matrix selbst aus. Wahr oder falsch?"
+          },
+          "answerKey": "fact",
+          "hints": [
+            "He trained for months before filming",
+            "He is known for his dedication to stunts"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "Keanu Reeves trained for four months in martial arts and wire work for The Matrix.",
+            "ru": "Киану Ривз тренировался четыре месяца по боевым искусствам для «Матрицы».",
+            "de": "Keanu Reeves trainierte vier Monate in Kampfkunst und Drahtseilarbeiten für The Matrix."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mx_loc_3",
+      "lat": 55.7500,
+      "lon": 37.6100,
+      "radiusM": 180.0,
+      "orderIndex": 2,
+      "tasks": [
+        {
+          "id": "mx_task_3",
+          "type": "count",
+          "prompt": {
+            "en": "How many films are in The Matrix trilogy? Enter a number.",
+            "ru": "Сколько фильмов в трилогии «Матрица»? Введите число.",
+            "de": "Wie viele Filme umfasst die Matrix-Trilogie? Geben Sie eine Zahl ein."
+          },
+          "answerKey": "3",
+          "hints": [
+            "It is called a trilogy",
+            "The last film was released in 2003"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "The Matrix trilogy consists of three films: The Matrix (1999), The Matrix Reloaded (2003), and The Matrix Revolutions (2003).",
+            "ru": "Трилогия «Матрица» состоит из трёх фильмов: «Матрица» (1999), «Матрица: Перезагрузка» (2003) и «Матрица: Революция» (2003).",
+            "de": "Die Matrix-Trilogie besteht aus drei Filmen: The Matrix (1999), The Matrix Reloaded (2003) und The Matrix Revolutions (2003)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mx_loc_4",
+      "lat": 55.7450,
+      "lon": 37.6250,
+      "radiusM": 200.0,
+      "orderIndex": 3,
+      "tasks": [
+        {
+          "id": "mx_task_4",
+          "type": "quiz",
+          "prompt": {
+            "en": "What is the name of the main character in The Matrix?",
+            "ru": "Как зовут главного героя «Матрицы»?",
+            "de": "Wie heißt die Hauptfigur in The Matrix?"
+          },
+          "answerKey": "Neo",
+          "hints": [
+            "His real name is Thomas Anderson",
+            "He is also known as The One"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "The main character Neo is played by Keanu Reeves. His real name in the film is Thomas Anderson.",
+            "ru": "Главного героя Нео играет Киану Ривз. Его настоящее имя в фильме — Томас Андерсон.",
+            "de": "Die Hauptfigur Neo wird von Keanu Reeves gespielt. Sein echter Name im Film ist Thomas Anderson."
+          }
+        }
+      ]
+    },
+    {
+      "id": "mx_loc_5",
+      "lat": 55.7520,
+      "lon": 37.6300,
+      "radiusM": 150.0,
+      "orderIndex": 4,
+      "tasks": [
+        {
+          "id": "mx_task_5",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "The famous bullet-dodging scene was filmed in slow motion using hundreds of cameras. True or false?",
+            "ru": "Знаменитая сцена с уклонением от пуль была снята в замедленном режиме с использованием сотен камер. Это правда или вымысел?",
+            "de": "Die berühmte Kugelmeid-Szene wurde in Zeitlupe mit Hunderten von Kameras gedreht. Wahr oder falsch?"
+          },
+          "answerKey": "fact",
+          "hints": [
+            "This technique was called bullet time",
+            "It was revolutionary for cinema at the time"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "The bullet time effect used 120 still cameras placed around the actor, each triggered slightly after the previous one.",
+            "ru": "Эффект «пулевого времени» использовал 120 фотокамер, расположенных вокруг актёра, каждая срабатывала чуть позже предыдущей.",
+            "de": "Der Bullet-Time-Effekt verwendete 120 Standkameras um den Schauspieler, die nacheinander ausgelöst wurden."
+          }
+        }
+      ]
+    }
+  ]
+}

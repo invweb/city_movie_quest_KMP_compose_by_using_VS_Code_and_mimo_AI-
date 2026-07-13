@@ -1,0 +1,99 @@
+CREATE TABLE Quests (
+    id TEXT NOT NULL PRIMARY KEY,
+    title TEXT NOT NULL,
+    description TEXT NOT NULL,
+    city TEXT NOT NULL,
+    difficulty TEXT NOT NULL DEFAULT 'medium',
+    duration_min INTEGER NOT NULL DEFAULT 60,
+    is_active INTEGER NOT NULL DEFAULT 1
+);
+
+CREATE TABLE Locations (
+    id TEXT NOT NULL PRIMARY KEY,
+    quest_id TEXT NOT NULL REFERENCES Quests(id) ON DELETE CASCADE,
+    lat REAL NOT NULL,
+    lon REAL NOT NULL,
+    radius_m REAL NOT NULL DEFAULT 150.0,
+    order_index INTEGER NOT NULL DEFAULT 0
+);
+
+CREATE TABLE Tasks (
+    id TEXT NOT NULL PRIMARY KEY,
+    location_id TEXT NOT NULL REFERENCES Locations(id) ON DELETE CASCADE,
+    type TEXT NOT NULL,
+    prompt TEXT NOT NULL,
+    answer_key TEXT NOT NULL,
+    hints_json TEXT NOT NULL DEFAULT '[]',
+    reward_points INTEGER NOT NULL DEFAULT 10,
+    imdb_fact TEXT NOT NULL DEFAULT ''
+);
+
+CREATE TABLE UserProgress (
+    user_id TEXT NOT NULL,
+    quest_id TEXT NOT NULL REFERENCES Quests(id) ON DELETE CASCADE,
+    current_location_index INTEGER NOT NULL DEFAULT 0,
+    completed_tasks_json TEXT NOT NULL DEFAULT '[]',
+    score INTEGER NOT NULL DEFAULT 0,
+    started_at TEXT NOT NULL,
+    finished_at TEXT
+);
+
+CREATE UNIQUE INDEX UserProgressUnique ON UserProgress(user_id, quest_id);
+
+selectAllQuests:
+SELECT * FROM Quests WHERE is_active = 1 ORDER BY title;
+
+selectQuestById:
+SELECT * FROM Quests WHERE id = ?;
+
+insertQuest:
+INSERT OR REPLACE INTO Quests(id, title, description, city, difficulty, duration_min, is_active)
+VALUES (?, ?, ?, ?, ?, ?, ?);
+
+updateQuestActive:
+UPDATE Quests SET is_active = ? WHERE id = ?;
+
+selectLocationsByQuest:
+SELECT * FROM Locations WHERE quest_id = ? ORDER BY order_index;
+
+selectLocationById:
+SELECT * FROM Locations WHERE id = ?;
+
+insertLocation:
+INSERT OR REPLACE INTO Locations(id, quest_id, lat, lon, radius_m, order_index)
+VALUES (?, ?, ?, ?, ?, ?);
+
+deleteLocationsByQuest:
+DELETE FROM Locations WHERE quest_id = ?;
+
+selectTasksByLocation:
+SELECT * FROM Tasks WHERE location_id = ?;
+
+selectTaskById:
+SELECT * FROM Tasks WHERE id = ?;
+
+insertTask:
+INSERT OR REPLACE INTO Tasks(id, location_id, type, prompt, answer_key, hints_json, reward_points, imdb_fact)
+VALUES (?, ?, ?, ?, ?, ?, ?, ?);
+
+deleteTasksByLocation:
+DELETE FROM Tasks WHERE location_id = ?;
+
+selectUserProgress:
+SELECT * FROM UserProgress WHERE user_id = ? AND quest_id = ?;
+
+selectAllUserProgress:
+SELECT * FROM UserProgress WHERE user_id = ?;
+
+insertOrUpdateUserProgress:
+INSERT OR REPLACE INTO UserProgress(user_id, quest_id, current_location_index, completed_tasks_json, score, started_at, finished_at)
+VALUES (?, ?, ?, ?, ?, ?, ?);
+
+updateUserProgressScore:
+UPDATE UserProgress SET score = ?, completed_tasks_json = ? WHERE user_id = ? AND quest_id = ?;
+
+updateUserProgressLocation:
+UPDATE UserProgress SET current_location_index = ? WHERE user_id = ? AND quest_id = ?;
+
+finishQuest:
+UPDATE UserProgress SET finished_at = ?, current_location_index = (SELECT COUNT(*) FROM Locations WHERE quest_id = ?) WHERE user_id = ? AND quest_id = ?;

@@ -1,0 +1,167 @@
+{
+  "id": "titanic_petersburg",
+  "title": {
+    "en": "Titanic Mysteries of St. Petersburg",
+    "ru": "Титаник: тайны Петербурга",
+    "de": "Titanic: Geheimnisse St. Petersburgs"
+  },
+  "description": {
+    "en": "Quest about the connection between St. Petersburg and the legendary Titanic. 5 locations with fascinating facts.",
+    "ru": "Квест о связи Санкт-Петербурга с легендарным «Титаником». 5 локаций с увлекательными фактами.",
+    "de": "Quest über die Verbindung zwischen St. Petersburg und der legendären Titanic. 5 Standorte mit faszinierenden Fakten."
+  },
+  "city": {
+    "en": "St. Petersburg",
+    "ru": "Санкт-Петербург",
+    "de": "Sankt Petersburg"
+  },
+  "difficulty": "easy",
+  "durationMin": 40,
+  "locations": [
+    {
+      "id": "tit_loc_1",
+      "lat": 59.9380,
+      "lon": 30.3150,
+      "radiusM": 200.0,
+      "orderIndex": 0,
+      "tasks": [
+        {
+          "id": "tit_task_1",
+          "type": "quiz",
+          "prompt": {
+            "en": "In what year did the Titanic sink?",
+            "ru": "В каком году затонул «Титаник»?",
+            "de": "In welchem Jahr sank die Titanic?"
+          },
+          "answerKey": "1912",
+          "hints": [
+            "It was in the early 20th century",
+            "The ship struck an iceberg"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "The Titanic sank on April 15, 1912 during its maiden voyage from Southampton to New York.",
+            "ru": "«Титаник» затонул 15 апреля 1912 года во время своего первого рейса из Саутгемптона в Нью-Йорк.",
+            "de": "Die Titanic sank am 15. April 1912 während ihrer Jungfernfahrt von Southampton nach New York."
+          }
+        }
+      ]
+    },
+    {
+      "id": "tit_loc_2",
+      "lat": 59.9350,
+      "lon": 30.3200,
+      "radiusM": 150.0,
+      "orderIndex": 1,
+      "tasks": [
+        {
+          "id": "tit_task_2",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "The ship that rescued Titanic survivors was called Carpathia. True or false?",
+            "ru": "Корабль, спасший выживших «Титаника», назывался «Карпатия». Это правда или вымысел?",
+            "de": "Das Schiff, das die Überlebenden der Titanic rettete, hieß Carpathia. Wahr oder falsch?"
+          },
+          "answerKey": "fact",
+          "hints": [
+            "It was a Cunard Line ship",
+            "It arrived about 1.5 hours after the sinking"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "The RMS Carpathia rescued 710 survivors from the Titanic and arrived at the scene about 1.5 hours after the ship sank.",
+            "ru": "RMS «Карпатия» спасла 710 выживших с «Титаника» и прибыла на место примерно через 1,5 часа после затопления корабля.",
+            "de": "Die RMS Carpathia rettete 710 Überlebende der Titanic und erreichte den Unfallort etwa 1,5 Stunden nach dem Sinken des Schiffes."
+          }
+        }
+      ]
+    },
+    {
+      "id": "tit_loc_3",
+      "lat": 59.9300,
+      "lon": 30.3250,
+      "radiusM": 180.0,
+      "orderIndex": 2,
+      "tasks": [
+        {
+          "id": "tit_task_3",
+          "type": "count",
+          "prompt": {
+            "en": "How many people survived the Titanic disaster? Enter a number.",
+            "ru": "Сколько людей выжило в катастрофе «Титаника»? Введите число.",
+            "de": "Wie viele Menschen überlebten die Titanic-Katastrophe? Geben Sie eine Zahl ein."
+          },
+          "answerKey": "710",
+          "hints": [
+            "Less than half of the passengers survived",
+            "About 1500 people died"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "Of the approximately 2,224 passengers and crew, 710 survived the disaster.",
+            "ru": "Из примерно 2 224 пассажиров и членов экипажа 710 человек выжили в катастрофе.",
+            "de": "Von den etwa 2.224 Passagieren und Besatzungsmitgliedern überlebten 710 die Katastrophe."
+          }
+        }
+      ]
+    },
+    {
+      "id": "tit_loc_4",
+      "lat": 59.9280,
+      "lon": 30.3300,
+      "radiusM": 200.0,
+      "orderIndex": 3,
+      "tasks": [
+        {
+          "id": "tit_task_4",
+          "type": "quiz",
+          "prompt": {
+            "en": "Who directed the 1997 film Titanic?",
+            "ru": "Кто поставил фильм «Титаник» 1997 года?",
+            "de": "Wer hat den Film Titanic von 1997 inszeniert?"
+          },
+          "answerKey": "James Cameron",
+          "hints": [
+            "This director also made Avatar",
+            "He is known for deep-sea exploration"
+          ],
+          "rewardPoints": 10,
+          "imdbFact": {
+            "en": "James Cameron directed Titanic (1997), which became the highest-grossing film at the time with over $1.8 billion worldwide.",
+            "ru": "Джеймс Кэмерон поставил «Титаник» (1997), который стал самым кассовым фильмом того времени, собрав более 1,8 миллиарда долларов по всему миру.",
+            "de": "James Cameron inszenierte Titanic (1997), der damals zum erfolgreichsten Film wurde mit über 1,8 Milliarden Dollar weltweit."
+          }
+        }
+      ]
+    },
+    {
+      "id": "tit_loc_5",
+      "lat": 59.9260,
+      "lon": 30.3350,
+      "radiusM": 150.0,
+      "orderIndex": 4,
+      "tasks": [
+        {
+          "id": "tit_task_5",
+          "type": "fact_or_fict",
+          "prompt": {
+            "en": "The Titanic was the largest ship in the world at the time of its launch. True or false?",
+            "ru": "«Титаник» был самым большим кораблём в мире на момент своего запуска. Это правда или вымысел?",
+            "de": "Die Titanic war zum Zeitpunkt ihrer Indienststellung das größte Schiff der Welt. Wahr oder falsch?"
+          },
+          "answerKey": "fact",
+          "hints": [
+            "It was built by Harland and Wolff",
+            "Its sister ship was Olympic"
+          ],
+          "rewardPoints": 15,
+          "imdbFact": {
+            "en": "The Titanic was 269 meters long and was the largest ship afloat when it entered service in 1912.",
+            "ru": "«Титаник» был длиной 269 метров и самым большим кораблём на плаву, когда вступил в строй в 1912 году.",
+            "de": "Die Titanic war 269 Meter lang und das größte Schiff auf See, als sie 1912 in Dienst gestellt wurde."
+          }
+        }
+      ]
+    }
+  ]
+}
