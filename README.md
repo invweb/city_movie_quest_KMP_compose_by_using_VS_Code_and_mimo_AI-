@@ -13,6 +13,9 @@ A Kotlin Multiplatform (KMP) app for exploring movie filming locations through c
 ### Settings
 ![Settings](screenshots/d3.png)
 
+### Settings
+![About](screenshots/d4.png)
+
 ## Stack
 
 - **Language:** Kotlin 1.9.22
