@@ -5,13 +5,13 @@ A Kotlin Multiplatform (KMP) app for exploring movie filming locations through c
 ## Screenshots
 
 ### Main Menu
-![Main Menu](screenshots/01_main_menu.png)
+![Main Menu](screenshots/d1.png)
 
 ### Quests Catalog
-![Quests Catalog](screenshots/02_quests_catalog.png)
+![Quests Catalog](screenshots/d2.png)
 
 ### Settings
-![Settings](screenshots/03_settings.png)
+![Settings](screenshots/d3.png)
 
 ## Stack
 
